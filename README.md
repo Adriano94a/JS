@@ -70,6 +70,15 @@ const somar = function(a, b){
 Somar(5,9)
 // Imprimirá 14, que é o resultado de (5 + 9)
 
+## Função Anônima exemplo 2
+const eNumeroPar = function(num) {
+  return num % 2 === 0;
+};
+
+console.log(eNumeroPar(4)); // Retorna true
+console.log(eNumeroPar(5)); // Retorna false
+
+
 # Arrow Function
 
 // Arrow function
