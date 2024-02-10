@@ -36,4 +36,53 @@ for(let i = 0; i < letras.length; i++){
     console.log(letras[i]);
 }
 // Imprimirá 'a', 'b', e 'c'
+-------------------------------------------------------------------------------------------------
+# Funçoes
+# Função Regular
+Segue um exemplo de uma função regular, sem parâmetros, que imprime uma mensagem de boas-vindas quando executada:
+
+
+function cumprimentar(){
+    console.log("Boas-vindas!")
+}
+cumprimentar();
+// Imprimirá "Boas-vindas!"
+Obs. Lembra que para executar o bloco de código de qualquer função é necessário declarar ela, e depois chamá-la, escrevendo apenas o nome da função seguida de parênteses (com argumentos, caso precisar deles)
+Outro exemplo...
+function multiplicar(num1, num2){
+    return (num1 * num2);
+}
+multiplicar(3, 7);
+// Imprimirá 21, que é o resultado de (3 * 7)
+
+# Função Anônima
+Estas funções não possuem um nome quando declaradas, e são geralmente atribuídas a uma variável que guarda a função como seu valor.
+// Função anônima
+
+const adicionar = function(a, b){
+
+      return (a + b);
+}
+Para chamar uma função anônima, basta chamar o nome da variável que a guarda, seguida de um par de parênteses (com argumentos, caso precisar deles)
+const somar = function(a, b){
+    return (a + b);
+}
+Somar(5,9)
+// Imprimirá 14, que é o resultado de (5 + 9)
+
+# Arrow Function
+
+// Arrow function
+
+const proximoNum = (n) => {
+
+    return (n + 1)
+
+}
+Console.log(proximoNum(6))
+outro exemplo so que simplificado:
+const vezesCinco = num => num * 5
+
+console.log(vezesCinco(5))
+
 
