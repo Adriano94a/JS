@@ -124,3 +124,24 @@ Observações:
 Quando usamos os métodos .getElementsByClassName() e .getElementById() passamos apenas
 o nome da classe e do id respectivamente. Já quando usamos os métodos .querySelector() e .querySelectorAll() precisamos colocar um ponto '.'antes das classes, e um '#' antes dos IDs.
 
+# innerText e innerHTML
+
+innerText -- Retorna o texto sem formatação e sem elementos HTML.
+innerHTML -- Retorna o texto com formatação e com elementos HTML.
+
+## Manipulando o DOM com innerText
+Podemos alterar, por exemplo, o texto do nosso elemento h2 acessando a propriedade innerText do elementoH2 e atribuindo a ele um novo valor com o operador de atribuição =, seguido do texto como uma string (escrito entre aspas simples ou duplas).
+
+## Exemplo:
+let elementoH2 = document.querySelector(`h2`);
+
+elementoH2.innerText = `Novo Titulo com JS`;
+//No exemplo acima o texto antigo em h2 seria substituido por 'Novo Titulo com JS'
+
+As propriedades innerText e innerHTML são simples e nos permitem manipular os elementos do DOM de forma muito ampla. Como orientação geral, é recomendado usar a propriedade innerText quando queremos mudar apenas o texto de um elemento HTML que não possui elementos filhos, pois, caso existam, eles serão substituídos pelo novo texto.
+Já a propriedade innerHTML é melhor ser usada quando queremos alterar o conteúdo HTML de qualquer elemento do DOM, podendo incluir os elementos filhos, nomes de classe e qualquer outro atributo que os elementos HTML possam receber.
+
+
+
+
+
