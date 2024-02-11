@@ -94,4 +94,33 @@ const vezesCinco = num => num * 5
 
 console.log(vezesCinco(5))
 
+# Seletores DOM
+A ligação do DOM com nossos arquivos HTML é de dupla mão: quando um elemento HTML é criado, uma representação dele no DOM é criado, e se alteramos alguma representação no DOM seu respectivo elemento HTML sofrerá as mesmas alterações no navegador.
+
+# Acessando a DOM por ID e Classe
+Este objeto tem uma série de propriedades que nos retornam informações sobre nossa página, como por exemplo a URL, ou os cookies.
+
+Usaremos quatro métodos (funções guardadas em um objeto) para acessar os elementos da DOM. Os dois primeiros são:
+
+getElementById() ----> Retorna o elemento que tem o ID com o valor especificado.
+getElementsByClassName() -----> Retorna um HTMLCollection com todos os elementos que contem a class especificada.
+
+## Exemplo
+const titulo = document.getElementById("titulo");
+
+console.log(titulo) // mostrará o conteudo do titulo lá no HTML
+
+# Acessando a DOM com seletores CSS
+Para fazer isso , usaremos os seguintes dois métodos:
+
+querySelector() ---> Retorna o primeiro elemento no documento que segue  a especificação de um seletor CSS.
+querySelectorAll() ----> Retorna uma NodeList com todos os elementos no documento que seguem a especificação de um seletor CSS.
+
+## Exemplo
+const segundoTitulo = document.querySelector("div h2");
+console.log(segundoTitulo); // Mostrará o conteudo da div h2 no HTML
+
+Observações:
+Quando usamos os métodos .getElementsByClassName() e .getElementById() passamos apenas
+o nome da classe e do id respectivamente. Já quando usamos os métodos .querySelector() e .querySelectorAll() precisamos colocar um ponto '.'antes das classes, e um '#' antes dos IDs.
 
