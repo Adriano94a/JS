@@ -192,3 +192,9 @@ const postagens = document.querySelector(`.postagens`); //essa classe postagens 
 postagens.appendChild(postagemJavaScript);
 
 Os métodos **createElement()** e **appendChild()** são muito úteis em duas situações: quando queremos popular nosso site com dados vindo de sistemas externos e quando queremos que a interação de nossos usuários altere o conteúdo do site
+---------------------------------------------------------------------------------------
+# JS II
+Segunda parte do conteúdo fornecido pela Proz
+## Intro
+A linguagem JavaScript nos permite acessar e manipular diretamente a estilização de qualquer elemento capturado no DOM usando a propriedade style. Dessa forma, conseguimos editar nossos elementos com as mesmas propriedades e valores usados na CSS, mas respeitando a sintaxe da linguagem JavaScript.
+
