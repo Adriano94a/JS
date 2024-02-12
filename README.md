@@ -142,7 +142,33 @@ elementoH2.innerText = `Novo Titulo com JS`;
 As propriedades innerText e innerHTML são simples e nos permitem manipular os elementos do DOM de forma muito ampla. Como orientação geral, é recomendado usar a propriedade innerText quando queremos mudar apenas o texto de um elemento HTML que não possui elementos filhos, pois, caso existam, eles serão substituídos pelo novo texto.
 Já a propriedade innerHTML é melhor ser usada quando queremos alterar o conteúdo HTML de qualquer elemento do DOM, podendo incluir os elementos filhos, nomes de classe e qualquer outro atributo que os elementos HTML possam receber.
 
+# Criando elementos no DOM
 
+Para essa ação  estaremos usando os métodos createElement e appendChild.
+
+Exemplo de criação de um elemento li + manipulação criando uma id para o mesmo.
+let elementoJavaScript = document.createElement(`li`); //criação da li e da variavel
+
+elementoJavaScript.innerText = `JavaScript` // Manipulação da variavel adicionando o texto entre ``
+elementoJavaScript.id = `ling-js` // Adição de um id ao nosso elemento... visto que no html, cada um das li tinha um id
+
+console.log(elementoJavaScript); //Mostraria no console as mudanças realizadas...
+
+---------------------------------------------
+let elementoJavaScript = document.createElement(`li`); //criação da li e da variavel
+
+elementoJavaScript.innerText = `JavaScript` // Manipulação da variavel adicionando o texto entre ``
+elementoJavaScript.id = `ling-js` // Adição de um id ao nosso elemento... visto que no html, cada um das li tinha um id
+
+//Adicionando o elemento ao site.
+// precisamos capturar o seu elemento pai via DOM e salvá-lo em uma variável
+
+let listaLinguagens = document.querySelector(`.lista-linguagens`);
+//Com o elemento da lista não ordenada salvo na variável listaLinguagens, podemos chamar essa variável e usar o método appendChild() para adicionar elementos nele.
+
+listaLinguagens.appendChild(elementoJavaScript); // na minha pagina web agora teria o acrescimo de uma li com o texto Javascript... conforme criação acima.
+
+---------------------------------------------------
 
 
 
