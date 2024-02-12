@@ -36,6 +36,7 @@ for(let i = 0; i < letras.length; i++){
     console.log(letras[i]);
 }
 // Imprimirá 'a', 'b', e 'c'
+
 -------------------------------------------------------------------------------------------------
 # Funçoes
 # Função Regular
