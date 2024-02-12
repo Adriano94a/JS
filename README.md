@@ -169,6 +169,26 @@ let listaLinguagens = document.querySelector(`.lista-linguagens`);
 listaLinguagens.appendChild(elementoJavaScript); // na minha pagina web agora teria o acrescimo de uma li com o texto Javascript... conforme criação acima.
 
 ---------------------------------------------------
+# Adição de elementos complexos
 
+Para não precisar criar três elementos diferentes (div, h2 e p) e manipular cada um deles adicionando textos e classes, criaremos apenas um elemento e usaremos a propriedade innerHTML, seguindo as mesmas três etapas do exemplo anterior.
 
+const postagemJavaScript = document.createElement(`div`); //onde é criado uma div...
 
+## Usamos a propriedade innerHTML para inserir todo o conteúdo HTML das postagens em um template string:
+postagemJavaScript.innerHTML =
+
+`<h2 class="post-titulo">JavaScript</h2>
+
+<p class="post-texto">
+
+  JavaScript é uma linguagem de programação
+
+</p>`
+//Nessa etapa, capturamos o elemento pai da nossa postagem e salvamos ele em uma variável:
+const postagens = document.querySelector(`.postagens`); //essa classe postagens seria o id da minha section no html
+
+//Nele, adicionamos o elemento postagemJavaScript através do método appendChild().
+postagens.appendChild(postagemJavaScript);
+
+Os métodos **createElement()** e **appendChild()** são muito úteis em duas situações: quando queremos popular nosso site com dados vindo de sistemas externos e quando queremos que a interação de nossos usuários altere o conteúdo do site
