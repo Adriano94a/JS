@@ -221,10 +221,10 @@ O método contains() recebe como argumento uma string com o nome da classe. Dess
 
 Nesse exemplo, passaremos o valor borda-azul, salvaremos o valor retornado pelo método em uma variável chamada incluiClasse e, por fim, usaremos a função console.log() para imprimir o resultado.
 
-**let div = document.querySelector("div")
+**let div = document.querySelector("div")**
  
-let incluiClasse = div.classList.contains("borda-azul")
+**let incluiClasse = div.classList.contains("borda-azul")**
 
-console.log(incluiClasse);**
+**console.log(incluiClasse);**
 
 
