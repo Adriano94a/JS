@@ -198,3 +198,10 @@ Segunda parte do conteúdo fornecido pela Proz
 ## Intro
 A linguagem JavaScript nos permite acessar e manipular diretamente a estilização de qualquer elemento capturado no DOM usando a propriedade style. Dessa forma, conseguimos editar nossos elementos com as mesmas propriedades e valores usados na CSS, mas respeitando a sintaxe da linguagem JavaScript.
 
+## Sintase e convenções de escritas
+
+As propriedades do objeto “Style” são escritas com uma única palavra e redigidas da mesma forma que as escreveríamos em um arquivo CSS, por exemplo: color, margin, display etc. Contudo, as propriedades, que têm nomes com mais de uma palavra, seguem padrões de escrita diferentes.
+Na linguagem CSS, as escrevemos usando a padronização snake-case, já na linguagem JavaScript, usamos a camelCase. Dessa forma, as propriedades como background-color vira backgroundColor e text-decoration vira textDecoration.
+
+
+
