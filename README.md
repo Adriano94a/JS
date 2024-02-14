@@ -203,5 +203,28 @@ A linguagem JavaScript nos permite acessar e manipular diretamente a estilizaç�
 As propriedades do objeto “Style” são escritas com uma única palavra e redigidas da mesma forma que as escreveríamos em um arquivo CSS, por exemplo: color, margin, display etc. Contudo, as propriedades, que têm nomes com mais de uma palavra, seguem padrões de escrita diferentes.
 Na linguagem CSS, as escrevemos usando a padronização snake-case, já na linguagem JavaScript, usamos a camelCase. Dessa forma, as propriedades como background-color vira backgroundColor e text-decoration vira textDecoration.
 
+## Manipular classes com a propriedade .classList
+A propriedade style é útil quando queremos realizar estilizações menores, ou seja, quando vamos manipular uma propriedade CSS por vez. Porém, se quisermos manipular várias propriedades de uma só vez, é mais prático definir classes com várias regras de estilização e usar a linguagem JavaScript para manipular as classes que cada elemento inclui.
+
+Para manipular listas de classes com JavaScript, primeiro devemos ir no arquivo script.js, capturar o elemento div do DOM e, por fim, salvá-lo em uma variável.
+
+exemplo: let div = document.querySelector("div");
+
+Após isso, use o dot notation para acessar a propriedade classList do elemento que acabamos de salvar. Essa propriedade é um objeto com métodos, que também podemos acessar usando o dot notation.
+Agora, vamos usar o método contains(). Ele verifica se um elemento possui ou não uma determinada classe e retorna um valor booleano.
+
+## Verificar se um elemento tem uma classe.
+
+O método contains() recebe como argumento uma string com o nome da classe. Dessa forma, o retorno será true se o elemento conter essa classe e, caso não a possua, será false.
+
+ 
+
+Nesse exemplo, passaremos o valor borda-azul, salvaremos o valor retornado pelo método em uma variável chamada incluiClasse e, por fim, usaremos a função console.log() para imprimir o resultado.
+
+**let div = document.querySelector("div")
+ 
+let incluiClasse = div.classList.contains("borda-azul")
+
+console.log(incluiClasse);**
 
 
